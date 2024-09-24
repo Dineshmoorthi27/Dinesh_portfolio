@@ -326,6 +326,13 @@ nav {
     }
 }
 
+.contact{
+    background-color: #dee5eb;
+    padding: 2rem;
+    width: 100%;
+    height: 100vh;
+}
+
 footer {
     width: 100%;
     height: 50px;
