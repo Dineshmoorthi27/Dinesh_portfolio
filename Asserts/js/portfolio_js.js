@@ -7,7 +7,7 @@ document.getElementById('menu-icon').addEventListener('click', function () {
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = '../Asserts/documents/Dinesh_Resume.pdf';
+    link.href = 'Asserts/documents/Dinesh_Resume.pdf';
     link.download = 'Resume.pdf';
     link.click();
 }
