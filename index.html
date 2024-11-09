@@ -317,7 +317,7 @@
                 <p>You can reach us anytime via <a href="mailto:dineshmoorthi27@gmail.com">dineshmoorthi27@gmail.com</a>
                 </p>
 
-                <form action="#" method="POST" class="contact-form">
+                <form action="#" method="POST" class="contact-form" name="contact-form" id="contactForm">
                     <div class="input-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -368,25 +368,35 @@
                     <div class="input-group">
                         <label>Services</label>
                         <div class="checkbox-group">
-                            <label><input type="checkbox" name="services" value="website-design"> Website
+                            <label><input type="checkbox" name="services" id="value1" value="website-design"> Website
                                 design</label>
-                            <label><input type="checkbox" name="services" value="full-stack"> Full Stack
+                            <label><input type="checkbox" name="services" id="value2" value="full-stack"> Full Stack
                                 Project</label>
-                            <label><input type="checkbox" name="services" value="user-research"> User
+                            <label><input type="checkbox" name="services" id="value3" value="user-research"> User
                                 research</label>
-                            <label><input type="checkbox" name="services" value="content-creation"> Content
+                            <label><input type="checkbox" name="services" id="value4" value="content-creation"> Content
                                 creation</label>
-                            <label><input type="checkbox" name="services" value="machine-learning"> Machine
+                            <label><input type="checkbox" name="services" id="value5" value="machine-learning"> Machine
                                 learning</label>
-                            <label><input type="checkbox" name="services" value="other"> Other</label>
+                            <label><input type="checkbox" name="services" id="value6" value="other"> Other</label>
                         </div>
                     </div>
-                    <button type="submit" class="submit-btn">Get started</button>
+                    <button type="submit" class="submit-btn">
+                        Get started
+                    </button>
+
+                    <!-- <button type="submit" class="submit-btn">Get started</button> -->
+                    <!-- <div class="response" id="response"></div> -->
                 </form>
             </div>
         </div>
-
-
+        <div class="loader" id="loader">
+        </div>
+        <div class="popover" id="popover">
+            <div class="response" id="response"></div>
+            <button id="ClosePop" onclick="closePopover()">Close</button>
+        </div>
+    </section>
         <!-- footer starts-->
         <footer class="footer">
             <p>💕 strive for perfection in whatever you do 💕</p>
@@ -394,6 +404,7 @@
         <!-- footer ends-->
         </div>
         <script src="Asserts/js/portfolio_js.js"></script>
+        <script src="Asserts/js/contact.js"></script>
 </body>
 
 </html>

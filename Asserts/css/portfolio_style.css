@@ -239,7 +239,7 @@ nav {
 
     .about_he {
         width: 100%;
-        height: 7rem;
+        height: 5.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -367,7 +367,7 @@ nav {
 
     .skills_he {
         width: 100%;
-        height: 9rem;
+        height: 5.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -491,7 +491,7 @@ h1 {
 
 .project_he {
     width: 100%;
-    height: 9rem;
+    height: 5.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -647,7 +647,7 @@ h1 {
 
     .achievement_he {
         width: 100%;
-        height: 9rem;
+        height: 5.8rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -760,7 +760,7 @@ h1 {
 
 .contact_he {
     width: 100%;
-    height: 9rem;
+    height: 5.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -897,6 +897,95 @@ select {
 
 .submit-btn:hover {
     background-color: #5e1383;
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #6a1b9a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    animation: spin 1s linear infinite;
+
+    p {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Popover styling */
+.popover {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 300px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    /* border: 5px solid black; */
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#ClosePop {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ClosePop:hover {
+    background-color: lightgray;
+}
+
+.response {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.response-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
 }
 
 footer {
@@ -1677,5 +1766,15 @@ footer {
         p {
             font-size: 0.8rem;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .phone-number-group {
+        flex-direction: column;
+    }
+
+    .checkbox-group label {
+        flex: 1 1 100%;
     }
 }
